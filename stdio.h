@@ -67,7 +67,7 @@ typedef struct __sFILE FILE;
 #define SEEK_END        2       // set file offset to EOF plus offset 
 #endif
 
-#define TMP_MAX         26
+#define TMP_MAX         26   // Maximum number of unique temporary filenames
 
 #define stdin   (_impure_ptr->_stdin)
 #define stdout  (_impure_ptr->_stdout)
@@ -80,15 +80,15 @@ typedef struct __sFILE FILE;
 
 
 #ifdef __GNUC__
-#define __VALIST __gnuc_va_list
+#define __VALIST __gnuc_va_list // Define variable argument list for GNU C compiler
 #else
-#define __VALIST char*
+#define __VALIST char* // Define variable argument list for other compilers
 #endif
 
 #ifndef _EXFUN
 # define _EXFUN(N,P) N P
 #endif
-
+// Function prototypes for standard I/O operations 
 int     _EXFUN(printf, (const char *, ...));
 int     _EXFUN(scanf, (const char *, ...));
 int     _EXFUN(sscanf, (const char *, const char *, ...));
