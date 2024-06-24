@@ -4,11 +4,11 @@
 
 #include <xc.h> 
 
-void delay_adc(int cnt);
-void ADC_Init();
-int ADC_Read(int adcChannel);
+void delay_adc(int cnt); // Function prototype for the delay function
+void ADC_Init(); // Function prototype for ADC initialization 
+int ADC_Read(int adcChannel); // Function prototype for reading ADC value from a specified channel 
 
-#ifdef	__cplusplus
+#ifdef	__cplusplus 
 
 #endif 
 #ifdef	__cplusplus
