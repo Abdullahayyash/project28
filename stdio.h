@@ -113,7 +113,7 @@ size_t  _EXFUN(fwrite, (const void *, size_t _size, size_t _n, FILE *));
 int     _EXFUN(sprintf, (char *, const char *, ...));
 int     _EXFUN(snprintf, (char *, size_t, const char *, ...));
 
-#ifdef __cplusplus
+#ifdef __cplusplus     // End of extern "C" block 
 }
 #endif
 #endif 
